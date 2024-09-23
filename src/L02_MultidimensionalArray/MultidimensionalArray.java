@@ -11,6 +11,14 @@ public class MultidimensionalArray {
             {14, 16, 18}
         };
 
+        //Displaying the Multidimensional Array
+        for (int i = 0; i < evenNumb.length; i++) {
+            for (int j = 0; j < evenNumb[i].length; j++) {
+                System.out.print(evenNumb[i][j]);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 
 }
