@@ -7,6 +7,10 @@ public class DisplayViaForLoop {
         //Declaring array
         int[] OddNumbs = {1, 3, 5, 7, 9, 11, 13, 15};
 
+        //Displaying via for loop
+        for (int i = 0; i < OddNumbs.length; i++) {
+            System.out.println(OddNumbs[i]);
+        }
     }
 
 }
