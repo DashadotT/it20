@@ -7,6 +7,9 @@ public class SimpleImplementation {
         //Simple Implementation
         int[] OddNumbs = {1, 3, 5, 7};
 
+        //Displaying array length
+        System.out.println(OddNumbs.length);
+
     }
 
 }
