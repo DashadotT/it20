@@ -13,6 +13,10 @@ public class Main {
         //Initializing variables
         String item1, item2, item3, newItem, finditem;
         int index;
+
+        //to display items first
+        list.displayItems();
+
     }
 
 }
