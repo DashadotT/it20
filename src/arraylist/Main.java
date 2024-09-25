@@ -40,6 +40,14 @@ public class Main {
         list.displayItems();
         System.out.println("-----------------------------");
 
+        //To find the item of user's input and display the found item
+        System.out.println("Enter an item name that you want to find: ");
+        finditem = sc.nextLine();
+
+        list.findItem(finditem);
+        list.displayItems();
+        System.out.println("-----------------------------");
+
     }
 
 }
