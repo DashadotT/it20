@@ -24,4 +24,14 @@ public class ItemManager {
         System.out.println("You Added: " + items);
 
     }
+
+    //Method to update the one item in the list
+    public void updateItem(int index, String newItem) {
+        if (index >= 0 && index < items.size()) {
+            String oldItem = items.set(index, newItem);
+            System.out.println("You updated: " + oldItem + " to " + newItem);
+        } else {
+            System.out.println("Index out of bounds");
+        }
+    }
 }
