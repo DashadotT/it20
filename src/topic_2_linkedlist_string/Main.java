@@ -45,6 +45,20 @@ public class Main {
         list.printList();
     }
 
+    public static void display() {
+        list.printList();
+    }
+
+    public static void delete() {
+        System.out.println("What element would you like to delete from this list?");
+        list.printList();
+        String element = sc.next();
+        list.deleteByValue(element);
+        System.out.println("Element '" + element + "' successfully deleted!");
+        System.out.print("List: ");
+        list.printList();
+    }
+
     public static void main(String[] args) {
 
     }
