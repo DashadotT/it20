@@ -34,6 +34,30 @@ public class Main {
 
     }
 
+    public static void move() {
+        System.out.println("Enter the first index you want to swap: ");
+        int element1 = sc.nextInt();
+        System.out.println("Enter the second index you want to swap: ");
+        int element2 = sc.nextInt();
+
+        list.moveNodePointer(element1, element2);
+        list.printList();
+    }
+
+    public static void display() {
+        list.printList();
+    }
+
+    public static void delete() {
+        System.out.println("What Integer would you like to delete from this list?");
+        list.printList();
+        int element = sc.nextInt();
+        list.deleteByValue(element);
+        System.out.println("Integer '" + element + "' successfully deleted!");
+        System.out.print("List: ");
+        list.printList();
+    }
+
     public static void main(String[] args) {
 
     }
