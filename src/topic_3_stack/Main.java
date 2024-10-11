@@ -58,6 +58,14 @@ public class Main {
                             System.out.println("Popped Element: " + st.pop());
                         }
                         break;
+                    //Exit
+                    case 5:
+                        System.out.println("Thank you for running this simple program. Comeback Again!");
+                        sc.close();
+                        break;
+                    //repeat if invalid input
+                    default:
+                        System.out.println("Input is invalid. Please choose Again!");
 
                 }
             } catch (Exception e) {
