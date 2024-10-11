@@ -19,6 +19,13 @@ public class Main {
                     + "\n5. Exit");
             System.out.println("================");
 
+            //using try catch to catch invalid input and try again
+            try {
+
+            } catch (Exception e) {
+                System.out.println("Input is not a valid. Please try again!");
+                sc.next();
+            }
         }
 
     }
