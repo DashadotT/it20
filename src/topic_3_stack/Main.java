@@ -47,6 +47,17 @@ public class Main {
                     case 3:
                         System.out.println("The top Element is: " + st.peek());
                         break;
+                    //to pop an Element from the stack
+                    case 4:
+                        System.out.println("Would you like to pop the top Element from the stack?"
+                                + "\nPress 1 if YES"
+                                + "\nPress any numbers if NO");
+
+                        int resp = sc.nextInt();
+                        if (resp == 1) {
+                            System.out.println("Popped Element: " + st.pop());
+                        }
+                        break;
 
                 }
             } catch (Exception e) {
