@@ -33,6 +33,16 @@ public class Main {
                     case 1:
                         System.out.println("The stack size is: " + st.size());
                         break;
+                    //push a number to the top of the stack     
+                    case 2:
+                        if (st.size() != 5) {
+                            System.out.println("The stack is not full yet. You can still push!");
+                            int num = sc.nextInt();
+                            st.push(num);
+                        } else if (st.isFull()) {
+                            System.out.println("The stack is Full!");
+                        }
+                        break;
 
                 }
             } catch (Exception e) {
