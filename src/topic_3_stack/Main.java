@@ -43,6 +43,10 @@ public class Main {
                             System.out.println("The stack is Full!");
                         }
                         break;
+                    //to display the top Element from the stack
+                    case 3:
+                        System.out.println("The top Element is: " + st.peek());
+                        break;
 
                 }
             } catch (Exception e) {
