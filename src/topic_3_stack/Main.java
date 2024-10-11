@@ -22,6 +22,19 @@ public class Main {
             //using try catch to catch invalid input and try again
             try {
 
+                System.out.print("Response: ");
+
+                int choice = sc.nextInt();
+                System.out.println();
+
+                switch (choice) {
+
+                    //to know the stack size
+                    case 1:
+                        System.out.println("The stack size is: " + st.size());
+                        break;
+
+                }
             } catch (Exception e) {
                 System.out.println("Input is not a valid. Please try again!");
                 sc.next();
