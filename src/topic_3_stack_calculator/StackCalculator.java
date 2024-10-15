@@ -107,6 +107,10 @@ public class StackCalculator extends JFrame implements ActionListener {
         displayStack();
     }
 
+    private void displayStack() {
+        display.setText("Current Stack: " + stack + "\n");
+    }
+
     public static void main(String[] args) {
 
     }
