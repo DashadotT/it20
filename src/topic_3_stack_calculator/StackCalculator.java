@@ -59,6 +59,17 @@ public class StackCalculator extends JFrame implements ActionListener {
         panel.add(button);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String command = e.getActionCommand();
+        if (Character.isDigit(command.charAt(0))) {
+            stack.push(Integer.parseInt(command));
+            displayStack();
+        } else {
+            performOperation(command);
+        }
+    }
+
     public static void main(String[] args) {
 
     }
