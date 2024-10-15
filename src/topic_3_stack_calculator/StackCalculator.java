@@ -11,7 +11,7 @@ public class StackCalculator extends JFrame implements ActionListener {
     private Stack<Integer> stack;
     private JTextArea display;
 
-    public Calcu() {
+    public StackCalculator() {
         stack = new Stack<>();
         setupFrame();
         setupDisplay();
@@ -33,6 +33,30 @@ public class StackCalculator extends JFrame implements ActionListener {
         display.setMargin(new Insets(10, 10, 10, 10));
         JScrollPane scrollPane = new JScrollPane(display);
         add(scrollPane, BorderLayout.NORTH);
+    }
+
+    private void setupButtons() {
+        JPanel buttonPanel = new JPanel(new GridLayout(4, 3, 10, 10));
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        for (int i = 1; i <= 9; i++) {
+            addButton(buttonPanel, String.valueOf(i));
+        }
+        addButton(buttonPanel, "0");
+
+        addButton(buttonPanel, "+");
+        addButton(buttonPanel, "-");
+        addButton(buttonPanel, "*");
+        addButton(buttonPanel, "/");
+
+        add(buttonPanel, BorderLayout.CENTER);
+    }
+
+    private void addButton(JPanel panel, String label) {
+        JButton button = new JButton(label);
+        button.setFont(new Font("Arial", Font.BOLD, 16));
+        button.addActionListener(this);
+        panel.add(button);
     }
 
     public static void main(String[] args) {
