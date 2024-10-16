@@ -10,4 +10,11 @@ public class Queue {
         customers = new LinkedList<>();
     }
 
+    public boolean isEmpty() {
+        return customers.isEmpty();
+    }
+
+    public int size() {
+        return customers.size();
+    }
 }
